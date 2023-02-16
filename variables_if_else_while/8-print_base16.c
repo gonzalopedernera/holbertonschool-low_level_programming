@@ -7,11 +7,14 @@
  */
 int main(void)
 {
-char ch;
+int ch;
 
+for (ch = 97; ch <= 122; ch++)
+putchar(ch);
 for (ch = 48; ch <= 57; ch++)
 putchar(ch);
 
-putchar('\n')
+putchar('\n');
 return (0);
 }
+
