@@ -18,9 +18,15 @@ lastdig = num % 10;
 lastdigneg = lastdig * -1;
 
 if(lastdig >= 0)
-printf("%d", lastdig);
-else(lastdig < 0);
-printf("%d", lastdigneg);
+{
+putchar(lastdig);
+putchar('\n');
+}
+else
+{
+putchar(lastdigneg);
+putchar('\n');
+}
 
 return (0);
 }
