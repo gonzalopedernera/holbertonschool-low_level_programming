@@ -6,7 +6,7 @@
  *
  * @b: a number
  *
- * return: the result of a + b
+ * Return: the result of a + b
  */
 
 int add(int a, int b)
