@@ -1,0 +1,10 @@
+#include "main.h"
+/**
+ * _abs - prints the absolute value of a number
+ */
+
+int _abs(int r)
+{
+if (r < 0)
+r = r * -1;
+}
