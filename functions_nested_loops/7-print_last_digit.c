@@ -11,11 +11,16 @@
 
 int print_last_digit(int num)
 {
-int lastDigit;
+int lastdig;
+int lastdigneg;
 
-lastDigit = num % 10;
+lastdig = num % 10;
+lastdigneg = lastdig * -1;
 
-if((lastDigit >= 0) || (lastDigit <= 0))
-printf("%d", lastDigit), printf("%d", lastDigit);
-return 0;
+if(lastdig >= 0)
+printf("%d", lastdig);
+else(lastdig < 0);
+printf("%d", lastdigneg);
+
+return (0);
 }
