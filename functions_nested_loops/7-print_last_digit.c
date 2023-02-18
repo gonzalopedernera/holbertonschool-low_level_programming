@@ -4,22 +4,22 @@
  *
  * @num: a number
  *
- * @lastdig: the last digit of num
+ * @ld: the last digit of num
  *
- * return: last digit
+ * Return: last digit
  */
 
 int print_last_digit(int num)
 {
- int lastdig;
+int ld;
 
- lastdig = num % 10;
+ld = num % 10;
 
- if(lastdig < 0)
-  {
-    lastdig = (lastdig * -1);
-  }
+if (ld < 0)
+{
+ld = (ld * -1);
+}
 
- putchar(lastdig + '0');
- return (lastdig);
+_putchar(ld + '0');
+return (ld);
 }
