@@ -28,5 +28,5 @@ printf("%d", lastdigneg);
 printf("\n");
 }
 
-return (0);
+return (void);
 }
