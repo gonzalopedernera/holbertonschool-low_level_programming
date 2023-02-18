@@ -4,8 +4,6 @@
  *
  * @num: a number
  *
- * @ld: the last digit of num
- *
  * Return: last digit
  */
 
