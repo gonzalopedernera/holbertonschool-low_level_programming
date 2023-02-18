@@ -18,5 +18,5 @@ lastDigit = num % 10;
 if(lastDigit >= 0)
 printf("%d", lastDigit);
 
-return (lastDigit);
+return (0);
 }
