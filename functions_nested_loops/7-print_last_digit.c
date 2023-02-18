@@ -19,13 +19,13 @@ lastdigneg = lastdig * -1;
 
 if(lastdig >= 0)
 {
-putchar(lastdig);
-putchar('\n');
+printf("%d", lastdig);
+printf("\n");
 }
 else
 {
-putchar(lastdigneg);
-putchar('\n');
+printf("%d", lastdigneg);
+printf("\n");
 }
 
 return (0);
