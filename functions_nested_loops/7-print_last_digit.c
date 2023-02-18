@@ -4,7 +4,7 @@
  *
  * @num: a number
  *
- * @lastDigit: the last digit of num
+ * @lastdig: the last digit of num
  *
  * return: last digit
  */
@@ -12,21 +12,12 @@
 int print_last_digit(int num)
 {
 int lastdig;
-int lastdigneg;
 
 lastdig = num % 10;
-lastdigneg = lastdig * -1;
 
-if(lastdig >= 0)
-{
-printf("%d", lastdig);
-printf("\n");
-}
-else
-{
-printf("%d", lastdigneg);
-printf("\n");
-}
+if(lastdig < 0)
+lastdig = (lastdig * -1);
 
-return (void);
+putchar(lastdig + '0');
+return (lastdig);
 }
