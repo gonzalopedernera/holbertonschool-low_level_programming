@@ -15,8 +15,7 @@ int main(void)
 		if (i % 5 == 0)
 			printf("Buzz");
 		if ((i % 3 != 0) && (i % 5 != 0))
-			printf("number= %d", i);
-		printf("\n");
+			printf("%d", i);
 	}
 	return (0);
 }
