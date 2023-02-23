@@ -6,11 +6,11 @@ void print_triangle(int size)
 	int j;
 	int sizes = size;
 
-	for (i = 1; i <= size; i++)
+	for (i = 1; i < size; i++)
 	{
 		for (j = 1; j < size; j++)
 		{
-		if (j >= sizes)
+		if (j >= (sizes -1))
 		{
 			_putchar(35);
 		}
