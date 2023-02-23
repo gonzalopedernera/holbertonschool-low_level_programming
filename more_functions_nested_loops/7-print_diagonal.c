@@ -11,14 +11,20 @@ int j;
 
 for (i = 1; i < n; i++)
 {
-for (j = 1; j < n; j++)
+for (j = 1; j < j; j++)
 {
 	_putchar(127);
 }
+j = 1;
+if (n >= 1)
+{
 	_putchar(92);
+}
 	_putchar('\n');
 }
 if (n <= 0)
+{
 	_putchar('\n');
+}
 }
 
