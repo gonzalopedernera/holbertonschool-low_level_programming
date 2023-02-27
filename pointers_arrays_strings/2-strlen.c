@@ -15,7 +15,6 @@ int _strlen(char *s)
 		++i;
 	}
 
-	_putchar(i);
 	return (i);
 }
 
