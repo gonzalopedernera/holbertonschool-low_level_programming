@@ -4,15 +4,12 @@
 void puts_half(char *str)
 {
 	int i;
-	int l = strlen(str);
+	int l = _strlen(str);
+	int n = (l -1) / 2;
 
-	for (i = 0; i < l; i++)
+	for (i = n; i < l; i++)
 	{
-		if (i >= 5)
-		{
-			_putchar(str[i]);
-		}
+		_putchar(str[i]);
 	}
-		_putchar('\n');
+	_putchar('\n');
 }
-
