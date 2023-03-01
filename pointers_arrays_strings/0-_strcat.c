@@ -10,6 +10,7 @@ char *_starcat(char *dest, char *src)
 		l++;
 	}
 
+
 	return (dest);
 }
 
