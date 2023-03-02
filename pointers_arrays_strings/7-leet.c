@@ -14,7 +14,7 @@ char *leet(char *p)
 	char r[] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
 
 
-	for (p = 0; p[i] != '\0'; i++)
+	for (i = 0; p[i] != '\0'; i++)
 	{
 		for (j = 0; r[j] != '\0'; j++)
 		{
@@ -23,7 +23,6 @@ char *leet(char *p)
 				p[i] = q[j];
 			}
 		}
-		i++;
 	}
 	return (p);
 }
