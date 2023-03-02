@@ -34,7 +34,7 @@ char *cap_string(char *p)
 			{
 				p[i] = (int)p[i] - 32;
 			}
-			if (p[0])
+			if (i == 0)
 			{
 				p[i] = (int)p[i] - 32;
 			}
