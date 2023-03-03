@@ -17,7 +17,7 @@ int _atoi(char *s)
 		{
 			nc *= -1;
 		}
-		else if (*s <= 0 && *s >= 9)
+		else if (*s >= 0 && *s <= 9)
 		{
 			i = i * 10 + (*s - '0');
 		}
