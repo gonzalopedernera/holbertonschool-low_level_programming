@@ -6,7 +6,7 @@
  *
  * @needle: substring to be located in haystack
  *
- * Return: substring
+ * Return: substring if exists, 0 if no match
  */
 char *_strstr(char *haystack, char *needle)
 {
@@ -16,7 +16,11 @@ char *_strstr(char *haystack, char *needle)
 
 		for (i = 0; needle[i] != '\0'; i++)
 		{
-			for (j = 0; haystack[j] != '\0'; )
+			if (needle[i] == '\0')
+			{
+				return (haystack);
+			}
+			for (j = 0; haystack[j] != '\0';)
 			{
 				if (needle[i] == haystack[j])
 				{
@@ -28,6 +32,10 @@ char *_strstr(char *haystack, char *needle)
 			{
 				break;
 			}
+		}
+		if (p[0] == '\0')
+		{
+			return (0);
 		}
 	return (p);
 }
