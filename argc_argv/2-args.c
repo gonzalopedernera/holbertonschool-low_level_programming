@@ -1,5 +1,13 @@
 #include "main.h"
-
+/**
+ * main - prints all arguments it receives
+ *
+ * @argc: argument to main
+ *
+ * @argv: argument to main
+ *
+ * Return: 0
+ */
 int main(int argc, char *argv[])
 {
 	int i;
