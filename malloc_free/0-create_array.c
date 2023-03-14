@@ -17,6 +17,11 @@ char *create_array(unsigned int size, char c)
 
 	s = malloc(sizeof(s) * size);
 
+	if (s == NULL)
+	{
+		return (NULL);
+	}
+
 	if (size == 0)
 	{
 		return (NULL);
