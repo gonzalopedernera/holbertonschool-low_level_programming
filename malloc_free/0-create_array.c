@@ -8,7 +8,7 @@
  *
  * @c: char to initialize the array with
  *
- * Return: the array
+ * Return: the array, or null in case of fail
  */
 char *create_array(unsigned int size, char c)
 {
@@ -16,6 +16,11 @@ char *create_array(unsigned int size, char c)
 	int i;
 
 	s = malloc(sizeof(s) * size);
+
+	if (size == 0)
+	{
+		return (NULL);
+	}
 
 	for (i = 0; s[i] == '\0';)
 	{
