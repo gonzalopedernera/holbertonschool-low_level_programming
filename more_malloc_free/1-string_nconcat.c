@@ -36,12 +36,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (n >= j + 1)
 		n = j + 1;
 
-	str = malloc(sizeof(char) * (i + n) + 1);
+	str = malloc(sizeof(char) * (i + n));
 
 	if (str == NULL)
 		return (NULL);
 
-	for (k = 0; k < (i + n) + 1;)
+	for (k = 0; k < (i + n);)
 	{
 		if (k < i)
 			str[k] = s1[k];
