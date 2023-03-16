@@ -33,10 +33,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		j++;
 	}
 
-	if (n >= j + 1)
-		n = j + 1;
+	if (n >= j)
+		n = j;
 
-	str = malloc(sizeof(char) * (i + n));
+	str = malloc(sizeof(char) * (i + n) + 1);
 
 	if (str == NULL)
 		return (NULL);
