@@ -12,8 +12,14 @@
 int get_bit(unsigned long int n, unsigned int index)
 {
 	int bit;
+	unsigned int i;
 
-	if (n == '\0')
+	for (i = 0; i < (sizeof(unsigned long int) * 8) - 1; )
+	{
+		i++;
+	}
+
+	if (n == '\0' || index > i)
 	{
 		return (-1);
 	}
