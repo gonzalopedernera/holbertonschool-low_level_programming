@@ -25,6 +25,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	{
 		free(buffer);
 		return (0);
+		write(1, "Error", 5);
 	}
 
 	rc = read(fd, buffer, letters);
@@ -32,9 +33,10 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	{
 		free(buffer);
 		return (0);
+		write(1, "Error", 5);
 	}
 
 	write(1, buffer, letters);
-
+	close(fd);
 	return (rc);
 }
